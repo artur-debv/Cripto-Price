@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 20px;
+}
+
+.input_Search{
+    width: 80%;
+    height: 45px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_search{
+    width: 200px;
+    height: 46px;
+    border: navajowhite;
+    background: gainsboro;
+}

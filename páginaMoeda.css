@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.moeda-detalhes {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.moeda-detalhes h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.moeda-detalhes img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.moeda-detalhes p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.moeda-detalhes p span {
+    color: #333;
+    font-weight: bold;
+}
+
+.moeda-detalhes .preco {
+    font-size: 2em;
+    color: #27ae60;
+}
+
+.moeda-detalhes .market-cap,
+.moeda-detalhes .volume {
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #999;
+}

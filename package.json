@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "ejs": "^3.1.10",
+    "http-proxy-middleware": "^3.0.0",
+    "request": "^2.88.2",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
+}
