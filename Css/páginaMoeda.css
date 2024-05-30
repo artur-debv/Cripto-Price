@@ -62,12 +62,18 @@ footer {
 }
 
 
-.default-background {
-    background-color: #f0f0f0;
-}
 
 /* Cor alternativa de fundo */
 .alternative-background .moeda-detalhes {
     background-color: black;
     color: white;
+}
+
+.alternative-background .bx-left-arrow-alt:before{
+    color: white;
+}
+
+.bx-left-arrow-alt:before {
+    content: "\ed96";
+    color: black;
 }
