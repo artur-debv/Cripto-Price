@@ -72,7 +72,7 @@ if (moedaId) {
                 datasets: [{
                     label: `Preço (USD)`,
                     data: [preco], // Adiciona o preço mais recente ao gráfico
-                    borderColor: 'blue',
+                    borderColor: 'black',
                     borderWidth: 2,
                     pointRadius: 5,
                     pointHoverRadius: 7,
