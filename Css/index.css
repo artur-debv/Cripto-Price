@@ -52,6 +52,53 @@ img{
     color: white;
 }
 
+ /* Estilo para o modo claro */
+ body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .table {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.light-mode .table th,
+.light-mode .table td {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+}
+
+/* Estilo para o modo escuro */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.dark-mode .table {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Estilo para os links em modo escuro */
+.dark-mode a {
+    color: white;
+}
+ 
 .icons {
     margin-left: 10px; /* Adiciona espaço à esquerda do ícone */
+}
+
+.table{
+    text-align: center;
 }

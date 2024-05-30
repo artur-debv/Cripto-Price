@@ -87,3 +87,50 @@ fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
     .catch((error) => console.log(error));
 })
 .catch((error) => console.log(error));
+
+
+
+        // Alternar entre modos escuro e claro
+        document.getElementById('icon').addEventListener('click', function() {
+            const body = document.body;
+            const icon = document.getElementById('icon');
+
+            // Alterna as classes do body
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+
+            // Alterna o ícone
+            if (icon.classList.contains('bxs-sun')) {
+                icon.classList.remove('bxs-sun');
+                icon.classList.add('bxs-moon');
+            } else {
+                icon.classList.remove('bxs-moon');
+                icon.classList.add('bxs-sun');
+            }
+
+            // Salvar a preferência do usuário no localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('mode', 'dark');
+            } else {
+                localStorage.setItem('mode', 'light');
+            }
+        });
+
+        // Verificar a preferência do usuário ao carregar a página
+        window.addEventListener('load', function () {
+            const mode = localStorage.getItem('mode');
+            const body = document.body;
+            const icon = document.getElementById('icon');
+
+            if (mode === 'dark') {
+                body.classList.add('dark-mode');
+                body.classList.remove('light-mode');
+                icon.classList.add('bxs-moon');
+                icon.classList.remove('bxs-sun');
+            } else {
+                body.classList.add('light-mode');
+                body.classList.remove('dark-mode');
+                icon.classList.add('bxs-sun');
+                icon.classList.remove('bxs-moon');
+            }
+        });
