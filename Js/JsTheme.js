@@ -1,10 +1,13 @@
-document.getElementById('icon').addEventListener('click', function() {
-    const icon = document.getElementById('icon');
-    if (icon.classList.contains('bxs-sun')) {
-        icon.classList.remove('bxs-sun');
-        icon.classList.add('bxs-moon');
+function setTheme(theme) {
+    if (theme === 'dark') {
+        mode.classList.remove('fa-moon');
+        mode.classList.add('bxs-sun');
+        form.classList.add('dark');
+        form2.classList.add('select');
     } else {
-        icon.classList.remove('bxs-moon');
-        icon.classList.add('bxs-sun');
+        mode.classList.remove('bxs-sun');
+        mode.classList.add('bxs-moon');
+        form.classList.remove('dark');
+        form2.classList.remove('select');
     }
-});
+}
