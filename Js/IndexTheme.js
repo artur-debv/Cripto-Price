@@ -3,12 +3,12 @@ document.getElementById('icon').addEventListener('click', function() {
     const icon = document.getElementById('icon');
     
     // Alterna a cor de fundo
-    if (body.classList.contains('default-background')) {
-        body.classList.remove('default-background');
-        body.classList.add('alternative-background');
+    if (body.classList.contains('default-table')) {
+        body.classList.remove('default-table');
+        body.classList.add('alternative-table');
     } else {
-        body.classList.remove('alternative-background');
-        body.classList.add('default-background');
+        body.classList.remove('alternative-table');
+        body.classList.add('default-table');
     }
     
     // Alterna o ícone
