@@ -27,10 +27,10 @@ if (moedaId) {
                 document.head.appendChild(link);
             }
 
-            document.getElementById('moedaNome').textContent = `${moeda.name}(${moeda.symbol})` ;
+            document.getElementById('moedaNome').textContent = `${moeda.name}(${moeda.symbol})`;
             document.getElementById('moedaImagem').src = moeda.logo;
             document.getElementById('moedaImagem').alt = `${moeda.name} logo`;
-            
+
 
             return fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=${moedaId}`, {
                 headers: {
@@ -38,8 +38,6 @@ if (moedaId) {
                 },
             });
         })
-
-
 
     // Função para obter as cotações mais recentes da moeda
     function getCotacoesMaisRecentes(moedaId) {
@@ -62,7 +60,6 @@ if (moedaId) {
                 return null;
             });
     }
-    
 
     // Função para criar e exibir o gráfico
     function criarGrafico(preco) {
@@ -76,13 +73,38 @@ if (moedaId) {
                     label: `Preço (USD)`,
                     data: [preco], // Adiciona o preço mais recente ao gráfico
                     borderColor: 'blue',
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
                 }]
             },
             options: {
+                responsive: true,
+                plugins: {
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    legend: {
+                        display: true,
+                        position: 'top',
+                    }
+                },
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
                 scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Tempo'
+                        }
+                    },
                     y: {
                         beginAtZero: false, // Começa o eixo y a partir do menor preço
+                        display: true,
                         title: {
                             display: true,
                             text: 'Preço (USD)'
