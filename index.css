@@ -4,49 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --background-color-light: #ffffff;
-    --background-color-dark: #2c2c2c;
-    --text-color-light: #000000;
-    --text-color-dark: #ffffff;
-}
-
-body.light-mode {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-}
-
-body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-
-button {
-    margin: 20px;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table th, .table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.table th {
-    background-color: #f2f2f2;
-}
-
-.light-mode .table th {
-    background-color: #f2f2f2;
-}
-
-.dark-mode .table th {
-    background-color: #4d4d4d;
-}
-
 img{
     height: 20px;
 }
@@ -71,4 +28,3 @@ img{
     border: navajowhite;
     background: gainsboro;
 }
-
