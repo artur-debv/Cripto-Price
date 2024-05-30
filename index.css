@@ -29,3 +29,7 @@ img{
     border: navajowhite;
     background: gainsboro;
 }
+
+.icons {
+    margin-left: 10px; /* Adiciona espaço à esquerda do ícone */
+}
